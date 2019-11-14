@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>webmap</title>
+
+        <!-- Load bootstrap here -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- Load leaflet here -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+        <!-- Load Jquery here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Load AJAX here -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+        <!-- Load Turf.js here -->
+        <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+
+        <!-- Load custom css file here -->
+        <link rel="stylesheet" href="css/map.css">
+    </head>
+    <body>
+        <div id="header" class="col-md-12">
+            <h1 class="text-center">NY Trolly</h1>
+        </div>
+        <div id="side_panel" class="col-md-3">
+            <h1 class="text-center">Attractions</h1>
+            <button id="zoomToLayer" class="form-control btn-primary">Zoom To Layer</button>
+        </div>
+        <div id="mapdiv" class="col-md-9"></div>
+        <div id="footer" class="col-md-12">
+            <h4 id="map_coords" class="text-center">Latitude: 41.921 Longitude: -73.978 Zoom Label: 11</h4>
+            <h4 class="text-center">&copy;2019<a href="https://www.linkedin.com/in/bipin-kumar-79492b19/">Welcome to author page</a></h4>
+        </div>
+
+        <script src="js/map.js"></script>
+    </body>
+</html>
